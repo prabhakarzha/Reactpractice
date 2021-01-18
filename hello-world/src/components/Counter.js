@@ -11,10 +11,23 @@ import React, { Component } from 'react'
         }
     }
     increment(){
-        this.setState({
-            count:this.state.count +1
-        })
+        // this.setState({
+            
+        //     count:this.state.count +1
+        //     })
+        this.setState((prevState)=>({
+            count:prevState.count +1
+
+        }))
         console.log(this.state.count)
+    }
+    incrementFive(){
+        this.increment()
+        this.increment()
+        this.increment()
+        this.increment()
+        this.increment()
+        this.increment()
     }
     
     render() {
@@ -22,7 +35,7 @@ import React, { Component } from 'react'
         <div>
 
         <div>count -{this.state.count} </div>
-        <button onClick={()=> this.increment()}>Increment</button>
+        <button onClick={()=> this.incrementFive()}>Increment</button>
          </div>
         )
         
