@@ -6,12 +6,18 @@ import Hello from './components/Hello'
 import Message from './components/Message'
 import { render } from 'react-dom';
 import Counter from './components/Counter';
+import FunctionClick from './components/FunctionClick';
+import ClassClick from './components/ClassClick';
+
 
 function App() {
-  
-  return   (
+return   (
     <div className="App">
-      <Counter/>
+
+      <FunctionClick />
+      <ClassClick/>
+
+      {/* <Counter/> */}
 
        
           {/* <Greet name="Ram" heroname ="Batman">
@@ -29,7 +35,11 @@ function App() {
   
    );
   
- }
+ 
+}
+
+
+
 
 
 
