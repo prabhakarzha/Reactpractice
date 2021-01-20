@@ -8,14 +8,18 @@ import { render } from 'react-dom';
 import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
+import EventBind from './components/EventBind';
+import ParentComponent from './components/ParentComponent';
 
 
 function App() {
 return   (
     <div className="App">
+      <ParentComponent/>
+      {/* <EventBind/> */}
 
-      <FunctionClick />
-      <ClassClick/>
+      {/* <FunctionClick />
+      <ClassClick/> */}
 
       {/* <Counter/> */}
 
