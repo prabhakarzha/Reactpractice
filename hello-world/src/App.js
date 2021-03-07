@@ -13,11 +13,17 @@ import ParentComponent from "./components/ParentComponent";
 import UserGreeting from "./components/UserGreeting";
 import NameList from "./components/NameList";
 import DataFetching from "./components/DataFetching";
+import Add from "./components/Add";
+
+
 
 function App() {
   return (
     <div className="App">
-      <DataFetching/>
+      <Add/>
+    
+    
+      {/* <DataFetching/> */}
       {/* <NameList/> */}
       {/* <UserGreeting /> */}
       {/* <ParentComponent/> */}
